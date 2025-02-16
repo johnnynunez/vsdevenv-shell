@@ -1,6 +1,6 @@
-# vsdevenv-shell v1
+# vsdevenv-shell v2
 
-[![test vsdevenv-shell](https://github.com/humbletim/vsdevenv-shell/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/humbletim/vsdevenv-shell/actions/workflows/ci.yml)
+[![test vsdevenv-shell](https://github.com/johnnynunez/vsdevenv-shell/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/johnnynunez/vsdevenv-shell/actions/workflows/ci.yml)
 
 This action enables individual job steps to be executed from within a [Visual Studio Developer Command Prompt](https://docs.microsoft.com/en-us/visualstudio/ide/reference/command-prompt-powershell?view=vs-2019) environment.
 
@@ -32,8 +32,8 @@ jobs:
   main:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: humbletim/vsdevenv-shell@v1
+      - uses: actions/checkout@v4
+      - uses: johnnynunez/vsdevenv-shell@v2
 
       - name: regular build step
         shell: bash

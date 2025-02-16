@@ -5,7 +5,7 @@ jobs:
   test-vsdevenv-shell:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - uses: ./
 
       - name: an earlier build step
